@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); body{ background-color: rgb(255, 255, 255); /* background-image: url('https://www.revolut.com/_next/image-asset/w:1080/q:90/https%3A%2F%2Fassets.revolut.com%2Fpublished-assets-v3%2F10d90d1e-506a-45b5-ab1c-0fb5b381630d%2F8ff28719-f23c-4885-906f-0cfaf86c481f.png@webp'); */ height: 100%; font-family: Nunito; font-weight: 500; }
+
+.sample {
+    background-color: rgba(241, 242, 244, 0.267);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgba(0, 0, 0, 0.171) solid 1px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.form-group {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    padding-left: 10px;
+}
+
+.sample input {
+    width: 90%;
+    height: 40px;
+    border-radius: 13px;
+    border: rgba(0, 0, 0, 0.185) solid 1px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.sample button { 
+    width: 30%; 
+    height: 30px; 
+    border-radius: 15px; 
+    background-color: black; border: black solid 1px; 
+    color: white; 
+    margin-top: 15px;
+}
+
+.sample h1{
+    margin-top: 0;
+}
+
+#money {
+    margin-top: 10px;
+}
+
+@media (max-width:1170px){
+    .sample{
+        width: 40%;
+    }
+}
+
+@media (max-width:740px){
+    .sample{
+        width: 50%;
+    }
+}
+
+@media (max-width:595px){
+    .sample{
+        width: 60%;
+    }
+}
+
+@media (max-width:500px){
+    .sample{
+        width: 70%;
+    }
+
+    .sample h1{
+        font-size: x-large;
+    }
+}
