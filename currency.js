@@ -189,3 +189,5 @@ const currency_symbols = {
 }
 
 export default currency_symbols
+
+//10.816072684008438
