@@ -23,13 +23,19 @@ const convert = (from,to,amount) =>{
     
 }
 
+const handleSubmit = () => {
+    console.log("wereds23edx")
+    const from = document.getElementById("from").value.toUpperCase();
+    const to = document.getElementById("to").value.toUpperCase();
+    const amount = document.getElementById("amount").value;
+    convert(from, to, amount)
+}
+
 const main = () => {
-    submit.addEventListener("click", function(){
-        const from = document.getElementById("from").value.toUpperCase();
-        const to = document.getElementById("to").value.toUpperCase();
-        const amount = document.getElementById("amount").value.toUpperCase();
-        convert(from, to, amount)
-    })
+    submit.addEventListener("click", handleSubmit);
+    document.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") handleSubmit();
+    });
 }
 
 main()
